@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: chat-pod
+    labels:
+        app: web
+spec:
+    containers:
+        - name: chat-service-pod-container
+          image: adityakumar666/chat_service:3rdTry
+          ports:
+            - containerPort: 8081
